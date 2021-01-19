@@ -9,7 +9,7 @@
 
   <head>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
-    <!-- Jquery -->
+    <!-- jQuery Tab_Views and Toggles-->
     <script>
       $(function () {
         $("#m_1").show();
@@ -24,8 +24,19 @@
           $("#m_2").show();
           $("#m_1").hide();
         });
+        $("#toggle_Key").click(function () {
+          $("#toggle_Key_Show").slideToggle("slow");
+        });
+        $("#toggle_Odds").click(function () {
+          $("#toggle_Odds_Show").slideToggle("slow");
+        });
+        $("#toggle_Counting").click(function () {
+          $("#toggle_Counting_Show").slideToggle("slow");
+        });
+        $("#show_1").fadeIn(600);
       });
     </script>
+    <!-- Html5-->
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Game Rules</title>
@@ -37,10 +48,8 @@
 
   <body>
     <div>
+      <h1 class="text-center">HOW TO PLAY BACCARAT</h1>
       <div class="tab-box">
-        <h1 class="text-center">HOW TO PLAY BACCARAT</h1>
-        <br />
-        <br />
         <div class="tab-view" id="m_1">
           <img
             src="img/baccarat_2.jpg"
@@ -52,11 +61,11 @@
             <h3 class="text-center">Ultimate Goal</h3>
 
             <p class="text-center">
-              딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여, <br />카드
-              숫자의 합을 비교하여 9에 가까운 쪽이 이기는 게임입니다.
+              <b>
+                딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여, <br />카드
+                숫자의 합을 비교하여 9에 가까운 쪽이 이기는 게임입니다.</b
+              >
             </p>
-
-            <hr />
 
             <h3 class="text-center">Basic Rules</h3>
             <p>
@@ -83,22 +92,24 @@
             class="position-absolute top-85 start-50 translate-middle"
           >
             <a href="index.html" type="button" class="btn btn-success">Home</a>
-            <a id="menu_2" type="button" class="btn btn-dark">More Rules</a>
+            <a id="menu_2" type="button" class="btn btn-dark" id="more_Rules"
+              >More Rules</a
+            >
           </div>
+          <br />
+          <br />
         </div>
-        <br />
 
         <div id="m_2">
           <img
             src="img/baccarat_4.jpg"
             class="img-fluid height:auto max-width:100% col-12"
           />
-
+          <br />
+          <br />
           <div class="text-center">
-            <br />
-
-            <h3>Key Point</h3>
-            <p>
+            <h3 id="toggle_Key">Key Point</h3>
+            <p id="toggle_Key_Show">
               <b>
                 Ace는 1로 계산합니다. King, Queen, Jack, 10은 각각 0으로
                 계산합니다. 그 외의 카드 2에서 9까지는 표면에 표시된 숫자로
@@ -107,13 +118,16 @@
               <br />
               <b>합이 10이상일 경우는 일의 자리만 계산합니다.</b>
             </p>
+            <hr />
           </div>
-          <hr />
 
           <div>
-            <h3 class="text-center">Betting Odds</h3>
+            <h3 class="text-center" id="toggle_Odds">Betting Odds</h3>
 
-            <ul class="text-center flex display-flex justify-content-center">
+            <ul
+              class="text-center flex display-flex justify-content-center"
+              id="toggle_Odds_Show"
+            >
               <li class="list-group-item list-group-item-success">
                 이긴 측은 베팅액의 1배를 지급받습니다.<br />[단, Banker측이
                 이기면 5%의 수수료를 차감합니다.]
@@ -142,91 +156,92 @@
           </div>
           <hr />
           <div>
-            <h3 class="text-center">Counting Rules</h3>
+            <h3 class="text-center" id="toggle_Counting">Counting Rules</h3>
+            <div id="toggle_Counting_Show">
+              <table class="table table-striped">
+                <tr>
+                  <th scope="row">플레이어 첫 2장의 카드 합</th>
+                  <td>Drawing Rule</td>
+                </tr>
 
-            <table class="table table-striped table-hover">
-              <tr>
-                <th scope="row">첫 2장의 카드 합</th>
-                <td>Drawing Rule</td>
-              </tr>
+                <tr>
+                  <th scope="row">0, 1, 2, 3, 4, 5</th>
+                  <td>한 장의 카드를 더 받음</td>
+                </tr>
 
-              <tr>
-                <th scope="row">0, 1, 2, 3, 4, 5</th>
-                <td>한 장의 카드를 더 받음</td>
-              </tr>
+                <tr>
+                  <th scope="row">6, 7</th>
+                  <td>
+                    Stand(Player측은 카드를 더 이상 받지 않고 Banker와 승부를
+                    겨룸)
+                  </td>
+                </tr>
+                <tr>
+                  <th scope="row">8, 9</th>
+                  <td>
+                    Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
+                    결정됨)
+                  </td>
+                </tr>
+              </table>
 
-              <tr>
-                <th scope="row">6, 7</th>
-                <td>
-                  Stand(Player측은 카드를 더 이상 받지 않고 Banker와 승부를
-                  겨룸)
-                </td>
-              </tr>
-              <tr>
-                <th scope="row">8, 9</th>
-                <td>
-                  Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
-                  결정됨)
-                </td>
-              </tr>
-            </table>
-          </div>
-          <hr />
-          <div class="p_6">
-            <table class="table">
-              <tr>
-                <th scope="row">Banker측 처음 2장의 카드 합</th>
-                <th scope="row">
-                  Player측 세 번째 카드가 <br />아래의 경우 추가카드를 받음
-                </th>
-                <th scope="row">
-                  Player측 세 번째 카드가<br />아래의 경우 추가카드를 받지 않음
-                </th>
-              </tr>
+              <hr />
 
-              <tr>
-                <td>3</td>
-                <td>0,1,2,3,4,5,6,7,9</td>
-                <td>8</td>
-              </tr>
+              <table class="table">
+                <tr>
+                  <th scope="row">Banker측 처음 2장의 카드 합</th>
+                  <th scope="row">
+                    Player측 세 번째 카드가 <br />아래의 경우 추가카드를 받음
+                  </th>
+                  <th scope="row">
+                    Player측 세 번째 카드가<br />아래의 경우 추가카드를 받지
+                    않음
+                  </th>
+                </tr>
 
-              <tr>
-                <td>4</td>
-                <td>2,3,4,5,6,7</td>
-                <td>0,1,8,9</td>
-              </tr>
-              <tr>
-                <td>5</td>
-                <td>4,5,6,7</td>
-                <td>0,1,2,3,8,9</td>
-              </tr>
+                <tr>
+                  <td>3</td>
+                  <td>0,1,2,3,4,5,6,7,9</td>
+                  <td>8</td>
+                </tr>
 
-              <tr>
-                <td>7</td>
-                <td colspan="2">
-                  Stand (Player측은 카드를 더 이상 받지 않고 Banker와 승부를
-                  겨룸)
-                </td>
-              </tr>
+                <tr>
+                  <td>4</td>
+                  <td>2,3,4,5,6,7</td>
+                  <td>0,1,8,9</td>
+                </tr>
+                <tr>
+                  <td>5</td>
+                  <td>4,5,6,7</td>
+                  <td>0,1,2,3,8,9</td>
+                </tr>
 
-              <tr>
-                <td>8,9</td>
-                <td colspan="2">
-                  Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
-                  결정됨)
-                </td>
-              </tr>
-            </table>
-            <br />
-            <div id="menu" class="position-absolute start-50 translate-middle">
-              <a href="index.html" type="button" class="btn btn-success"
-                >Home</a
-              >
-              <a id="menu_1" type="button" class="btn btn-dark">Go Back</a>
+                <tr>
+                  <td>7</td>
+                  <td colspan="2">
+                    Stand (Player측은 카드를 더 이상 받지 않고 Banker와 승부를
+                    겨룸)
+                  </td>
+                </tr>
+
+                <tr>
+                  <td>8,9</td>
+                  <td colspan="2">
+                    Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
+                    결정됨)
+                  </td>
+                </tr>
+              </table>
             </div>
-            <br />
-            <br />
           </div>
+          <br />
+          <br />
+          <div id="menu" class="position-absolute start-50 translate-middle">
+            <a href="index.html" type="button" class="btn btn-success">Home</a>
+            <a id="menu_1" type="button" class="btn btn-dark">Go Back</a>
+          </div>
+          <br />
+          <br />
         </div>
       </div>
     </div>
