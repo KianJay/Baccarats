@@ -1,252 +1,234 @@
 <!DOCTYPE html>
 <html lang="en">
-<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1" crossorigin="anonymous" />
+  <link
+    href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/css/bootstrap.min.css"
+    rel="stylesheet"
+    integrity="sha384-giJF6kkoqNQ00vy+HMDP7azOuL0xtbfIcaT9wjKHr8RbDVddVHyTfAAsrekwKmP1"
+    crossorigin="anonymous"
+  />
 
-<head>
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js">
-  </script>
-  <script>
-    $(function() {
-      $('#m_1').show();
-      $('#m_2').hide();
+  <head>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.0/jquery.min.js"></script>
+    <!-- Jquery -->
+    <script>
+      $(function () {
+        $("#m_1").show();
+        $("#m_2").hide();
 
-      $('#menu_1').click(function(){
-        $('#m_1').show();
-        $('#m_2').hide();
+        $("#menu_1").click(function () {
+          $("#m_1").show();
+          $("#m_2").hide();
+        });
+
+        $("#menu_2").click(function () {
+          $("#m_2").show();
+          $("#m_1").hide();
+        });
       });
+    </script>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Game Rules</title>
 
-      $('#menu_2').click(function(){
-        $('#m_2').show();
-        $('#m_1').hide();
-      })
+    <style>
+      @import url("explain.css");
+    </style>
+  </head>
 
-    })
-  </script>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-  <title>Game Rules</title>
+  <body>
+    <div>
+      <div class="tab-box">
+        <h1 class="text-center">HOW TO PLAY BACCARAT</h1>
+        <br />
+        <br />
+        <div class="tab-view" id="m_1">
+          <img
+            src="img/baccarat_2.jpg"
+            class="img-fluid height:auto max-width:100% col-12"
+          />
+          <br />
+          <br />
+          <ul>
+            <h3 class="text-center">Ultimate Goal</h3>
 
-  <style>
-    * {
-      margin: 10px;
-      padding: 0;
-    }
+            <p class="text-center">
+              딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여, <br />카드
+              숫자의 합을 비교하여 9에 가까운 쪽이 이기는 게임입니다.
+            </p>
 
-    body {
-      font-family: "sans-serif";
-      font-size: 12px;
-      color: #333;
-    }
+            <hr />
 
-    div.tab-box {
-      margin-top: 20px;
-      margin-left: auto;
-      margin-right: auto;
-      width: 520px;
-    }
+            <h3 class="text-center">Basic Rules</h3>
+            <p>
+              1. 플레이어는 좌석 앞에 지정되어 있는 Player, Banker, Tie, Pair 중
+              원하는 곳에 베팅을 할 수 있습니다.
+            </p>
+            <p>
+              2. 딜러는 Player측과 Banker측에 각각 2장의 카드를 내려놓습니다.
+            </p>
+            <p>
+              3. 딜러는 Player, Banker순으로 카드를 오픈하고 바카라 룰에 의해
+              추가로 한 장의 카드를 더 받을 수 있습니다.
+            </p>
+            <p>
+              4. Player측 또는 Banker측 카드의 합이 9에 가까운 쪽이 이기게 되고,
+              이긴 쪽에 베팅한 고객은 최초 베팅액의 1배를 받습니다. (1 to 1) 일
+              경우에는 불가능함)
+            </p>
+          </ul>
+          <br />
+          <br />
+          <div
+            id="menu"
+            class="position-absolute top-85 start-50 translate-middle"
+          >
+            <a href="index.html" type="button" class="btn btn-success">Home</a>
+            <a id="menu_2" type="button" class="btn btn-dark">More Rules</a>
+          </div>
+        </div>
+        <br />
 
-    div.tab-box #menu {
-      list-style-type: none;
-      height: 6px;
-    }
+        <div id="m_2">
+          <img
+            src="img/baccarat_4.jpg"
+            class="img-fluid height:auto max-width:100% col-12"
+          />
 
-    div.tab-box #menu_1,
-    #menu_2 {
-      float: left;
-      width: 100px;
-      height: 30px;
-      border: 1px;
-      border-style: solid;
-      border-color: #99999;
-      background-color: #9999;
-      margin-right: 0px;
-      text-align: center;
-      padding-top: 3px;
-    }
+          <div class="text-center">
+            <br />
 
-    div.tab-box #menu_1:hover {
-      background-color: #fc6;
-    }
+            <h3>Key Point</h3>
+            <p>
+              <b>
+                Ace는 1로 계산합니다. King, Queen, Jack, 10은 각각 0으로
+                계산합니다. 그 외의 카드 2에서 9까지는 표면에 표시된 숫자로
+                계산합니다.
+              </b>
+              <br />
+              <b>합이 10이상일 경우는 일의 자리만 계산합니다.</b>
+            </p>
+          </div>
+          <hr />
 
-    div.tab-box #menu_2:hover {
-      background-color: #fc6;
-    }
+          <div>
+            <h3 class="text-center">Betting Odds</h3>
 
-    .tab-view {
-      float: left;
-      width: 700px;
-      border: 0px solid #595959;
-      margin-top: 1px;
-      line-height: 30px;
-    }
-    .p_2 {
-      border-top : 1px dotted green;
+            <ul class="text-center flex display-flex justify-content-center">
+              <li class="list-group-item list-group-item-success">
+                이긴 측은 베팅액의 1배를 지급받습니다.<br />[단, Banker측이
+                이기면 5%의 수수료를 차감합니다.]
+              </li>
 
-      border-bottom : 1px dotted green;
-    }
+              <li class="list-group-item disabled" aria-disabled="true">
+                ※ No Commission Table에서는 수수료를 차감하지 않습니다.<br />
+                단, Banker측 카드의 합이 6으로 이긴 경우에는 50%의 수수료를
+                차감합니다.
+              </li>
 
-    .p_3 {
+              <li class="list-group-item list-group-item-success">
+                Tie Bet이 당첨될 경우에는 베팅 금액의 8배를 지급받습니다.
+              </li>
+              <li class="list-group-item disabled" aria-disabled="true">
+                ※ Tie : Player와 Banker 양쪽 카드의 합이 같은 값일 경우
+              </li>
 
-      border-bottom : 1px dotted green;
-    }
+              <li class="list-group-item list-group-item-success">
+                Pair Bet이 당첨될 경우에는 베팅 금액의 11배를 지급받습니다.
+              </li>
+              <li class="list-group-item disabled" aria-disabled="true">
+                ※ Pair : 최초 두 장의 카드가 같은 숫자가 나오는 것
+              </li>
+            </ul>
+          </div>
+          <hr />
+          <div>
+            <h3 class="text-center">Counting Rules</h3>
 
-    .p_4 {
+            <table class="table table-striped table-hover">
+              <tr>
+                <th scope="row">첫 2장의 카드 합</th>
+                <td>Drawing Rule</td>
+              </tr>
 
-      border-bottom : 1px dotted green;
-    }
+              <tr>
+                <th scope="row">0, 1, 2, 3, 4, 5</th>
+                <td>한 장의 카드를 더 받음</td>
+              </tr>
 
-    .p_5 {
+              <tr>
+                <th scope="row">6, 7</th>
+                <td>
+                  Stand(Player측은 카드를 더 이상 받지 않고 Banker와 승부를
+                  겨룸)
+                </td>
+              </tr>
+              <tr>
+                <th scope="row">8, 9</th>
+                <td>
+                  Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
+                  결정됨)
+                </td>
+              </tr>
+            </table>
+          </div>
+          <hr />
+          <div class="p_6">
+            <table class="table">
+              <tr>
+                <th scope="row">Banker측 처음 2장의 카드 합</th>
+                <th scope="row">
+                  Player측 세 번째 카드가 <br />아래의 경우 추가카드를 받음
+                </th>
+                <th scope="row">
+                  Player측 세 번째 카드가<br />아래의 경우 추가카드를 받지 않음
+                </th>
+              </tr>
 
-      border-bottom : 1px dotted green;
-    }
+              <tr>
+                <td>3</td>
+                <td>0,1,2,3,4,5,6,7,9</td>
+                <td>8</td>
+              </tr>
 
+              <tr>
+                <td>4</td>
+                <td>2,3,4,5,6,7</td>
+                <td>0,1,8,9</td>
+              </tr>
+              <tr>
+                <td>5</td>
+                <td>4,5,6,7</td>
+                <td>0,1,2,3,8,9</td>
+              </tr>
 
+              <tr>
+                <td>7</td>
+                <td colspan="2">
+                  Stand (Player측은 카드를 더 이상 받지 않고 Banker와 승부를
+                  겨룸)
+                </td>
+              </tr>
 
-    .bac_table{
-      text-align: center;
-      border: 1px solid;
-      border-bottom: 1px solid;
-      width : 600px;
-      height : 250px;
-    }
-
-    .bac_table tr {
-      margin : 1px;
-      border : 1px dotted;
-    }
-
-    .bac_table td {
-      border : 1px dotted;
-    }
-
-  </style>
-
-</head>
-
-<body>
-  <div class="tab-box">
-    <div class="bacarrat">
-      <h1><b>BACCARAT</h1>
-      <p>딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여 딜링한 후, 카드 숫자의 합을 비교하여<br> 9에 가까운 쪽이 이기는 게임입니다.</p>
+              <tr>
+                <td>8,9</td>
+                <td colspan="2">
+                  Natural (Player와 Banker 모두 추가 카드를 받지 않고 승부가
+                  결정됨)
+                </td>
+              </tr>
+            </table>
+            <br />
+            <div id="menu" class="position-absolute start-50 translate-middle">
+              <a href="index.html" type="button" class="btn btn-success"
+                >Home</a
+              >
+              <a id="menu_1" type="button" class="btn btn-dark">Go Back</a>
+            </div>
+            <br />
+            <br />
+          </div>
+        </div>
+      </div>
     </div>
-
-    <ul id="menu">
-      <li id="menu_1">게임방법</li>
-      <li id="menu_2">게임규칙</li>
-    </ul>
-    <div class="tab-view" id="m_1">
-      <h4><b>게임 테이블</h4>
-      <img src="바라카1.jpg" width="600px">
-      <ul>
-        <li>플레이어는 좌석 앞에 지정되어 있는 Player, Banker, Tie, Pair 중 원하는 곳에 베팅을 할 수 있습니다.</li>
-        <li>딜러는 Player측과 Banker측에 각각 2장의 카드를 내려놓습니다.</li>
-        <li>딜러는 Player, Banker순으로 카드를 오픈하고 바카라 룰에 의해 추가로 한 장의 카드를 더 받을 수 있습니다.</li>
-        <li>Player측 또는 Banker측 카드의 합이 9에 가까운 쪽이 이기게 되고, 이긴 쪽에 베팅한 고객은<br> 최초 베팅액의 1배를 받습니다.
-          (1 to 1) 일 경우에는 불가능함)</li>
-      </ul>
-
-    </div>
-    <div class="tab-view" id="m_2"> <img src="img_baccarat2.jpg" width = "600">
-
-      <div class="p_1">
-      <ul>
-        <li>Ace는 1로 계산합니다.</li>
-        <li>King, Queen, Jack, 10은 각각 0으로 계산합니다.</li>
-        <li>그 외의 카드 2에서 9까지는 표면에 표시된 숫자로 계산합니다.</li>
-        <li>합이 10이상일 경우는 일의 자리만 계산합니다.</li>
-      </ul>
-      </div>
-
-      <div class="p_2">
-        <p>이긴 측은 베팅액의 1배를 지급받습니다.(1 to 1)</p>
-        <p>[단, Banker측이 이기면 5%의 수수료를 차감합니다.]<br>
-        ※ No Commission Table에서는 수수료를 차감하지 않습니다.<br>
-        단, Banker측 카드의 합이 6으로 이긴 경우에는 50%의 수수료를 차감합니다.</p>
-      </div>
-
-      <div class="p_3">
-        <p>Tie Bet이 당첨될 경우에는 베팅 금액의 8배를 지급받습니다.(8 to 1)</p>
-        <p>※ Tie : Player와 Banker 양쪽 카드의 합이 같은 값일 경우</p>
-      </div>
-
-      <div class="p_4">
-        <p>Pair Bet이 당첨될 경우에는 베팅 금액의 11배를 지급받습니다.(11 to 1)</p>
-        <p>※ Pair : 최초 두 장의 카드가 같은 숫자가 나오는 것</p>
-
-      </div>
-
-      <div class="p_5">
-        <p>Players Rule</p>
-        <table class = "bac_table">
-          <tr>
-            <th>Player측 처음 2장의 카드 합</td>
-            <td>Drawing Rule</td>
-          </tr>
-
-          <tr>
-            <td>0, 1, 2, 3, 4, 5</td>
-            <td>한 장의 카드를 더 받음</td>
-          </tr>
-
-          <tr>
-            <td>6, 7</td>
-            <td>Stand<br>(Player측은 카드를 더 이상 받지 않고 Banker와 승부를 겨룸)</td>
-          </tr>
-          <tr>
-            <td>8, 9</td>
-            <td>Natural<br>(Player와 Banker 모두 추가 카드를 받지 않고 승부가 결정됨)</td>
-          </tr>
-        </table>
-
-      </div>
-
-      <div class="p_6">
-        <table class = "bac_table">
-          <tr>
-            <td>Banker측 처음 2장의 카드 합	</td>
-            <td>Player측 세 번째 카드가 <br>아래의 경우 추가카드를 받음</td>
-            <td>Player측 세 번째 카드가<br>아래의 경우 추가카드를 받지 않음</td>
-          </tr>
-
-          <tr>
-            <td>3</td>
-            <td>0,1,2,3,4,5,6,7,9	</td>
-            <td>8</td>
-          </tr>
-
-          <tr>
-            <td>4</td>
-            <td>2,3,4,5,6,7</td>
-            <td>0,1,8,9</td>
-          </tr>
-          <tr>
-            <td>5</td>
-            <td>4,5,6,7	</td>
-            <td>0,1,2,3,8,9</td>
-          </tr>
-
-          <tr>
-            <td>7</td>
-            <td colspan="2">Stand<br>(Player측은 카드를 더 이상 받지 않고 Banker와 승부를 겨룸)
-            </td>
-          </tr>
-
-          <tr>
-            <td>8,9</td>
-            <td colspan="2">Natural<br>(Player와 Banker 모두 추가 카드를 받지 않고 승부가 결정됨)</td>
-          </tr>
-
-
-
-        </table>
-      </div>
-
-
-    </div>
-
-
-  </div>
-
-</body>
-
+  </body>
 </html>
