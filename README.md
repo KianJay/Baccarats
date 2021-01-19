@@ -15,4 +15,4 @@ git push origin branchName
 <h3>깃헙 풀</h3>
 git pull origin branchName
   <h1>Main Page</h1>
-![Screen Shot 2021-01-19 at 11 17 33 am](https://user-images.githubusercontent.com/54985943/104979573-f5ec1600-5a47-11eb-9da1-01f051a9589c.png)
+<img src="https://user-images.githubusercontent.com/54985943/104979573-f5ec1600-5a47-11eb-9da1-01f051a9589c.png"/>
