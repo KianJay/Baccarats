@@ -19,6 +19,10 @@ p {
   font-size: 17px;
   font-weight: 510;
 }
+h7 {
+  color: red;
+  font-size: medium;
+}
 h3 {
   color: darkgreen;
 }
@@ -26,6 +30,30 @@ li {
   font-size: 18px;
   font-weight: 510;
 }
+
+.bac_table {
+  text-align: center;
+  border: 1px solid;
+  border-bottom: 1px solid;
+  width: 600px;
+  height: 250px;
+}
+#toggle_Key_Show,
+#toggle_Odds_Show,
+#toggle_Counting_Show {
+  display: none;
+}
+#toggle_Key,
+#toggle_Odds,
+#toggle_Counting {
+  cursor: pointer;
+}
+#toggle_Key:hover,
+#toggle_Odds:hover,
+#toggle_Counting:hover {
+  color: gold;
+}
+
 img {
   animation: fadeIn ease 2s;
   -webkit-animation: fadeIn ease 2s;
@@ -33,6 +61,7 @@ img {
   -o-animation: fadeIn ease 2s;
   -ms-animation: fadeIn ease 2s;
 }
+
 @keyframes fadeIn {
   0% {
     opacity: 0;
@@ -76,27 +105,4 @@ img {
   100% {
     opacity: 1;
   }
-}
-
-.bac_table {
-  text-align: center;
-  border: 1px solid;
-  border-bottom: 1px solid;
-  width: 600px;
-  height: 250px;
-}
-#toggle_Key_Show,
-#toggle_Odds_Show,
-#toggle_Counting_Show {
-  display: none;
-}
-#toggle_Key,
-#toggle_Odds,
-#toggle_Counting {
-  cursor: pointer;
-}
-#toggle_Key:hover,
-#toggle_Odds:hover,
-#toggle_Counting:hover {
-  color: gold;
 }
