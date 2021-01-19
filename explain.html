@@ -50,41 +50,39 @@
     <div>
       <h1 class="text-center">HOW TO PLAY BACCARAT</h1>
       <div class="tab-box">
-        <div class="tab-view" id="m_1">
+        <div id="m_1">
           <img
             src="img/baccarat_2.jpg"
             class="img-fluid height:auto max-width:100% col-12"
           />
           <br />
           <br />
-          <ul>
-            <h3 class="text-center">Ultimate Goal</h3>
 
-            <p class="text-center">
-              <b>
-                딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여, <br />카드
-                숫자의 합을 비교하여 9에 가까운 쪽이 이기는 게임입니다.</b
-              >
-            </p>
+          <h3 class="text-center">Ultimate Goal</h3>
 
-            <h3 class="text-center">Basic Rules</h3>
-            <p>
-              1. 플레이어는 좌석 앞에 지정되어 있는 Player, Banker, Tie, Pair 중
-              원하는 곳에 베팅을 할 수 있습니다.
-            </p>
-            <p>
-              2. 딜러는 Player측과 Banker측에 각각 2장의 카드를 내려놓습니다.
-            </p>
-            <p>
-              3. 딜러는 Player, Banker순으로 카드를 오픈하고 바카라 룰에 의해
-              추가로 한 장의 카드를 더 받을 수 있습니다.
-            </p>
-            <p>
-              4. Player측 또는 Banker측 카드의 합이 9에 가까운 쪽이 이기게 되고,
-              이긴 쪽에 베팅한 고객은 최초 베팅액의 1배를 받습니다. (1 to 1) 일
-              경우에는 불가능함)
-            </p>
-          </ul>
+          <p class="text-center">
+            <b>
+              딜러가 플레이어와 뱅커 카드를 바카라 룰에 의거하여, <br />카드
+              숫자의 합을 비교하여 <q>9</q> 에 가까운 쪽이 이기는 게임입니다.</b
+            >
+          </p>
+          <hr />
+          <h3 class="text-center">Basic Rules</h3>
+          <p>
+            1. 플레이어는 좌석 앞에 지정되어 있는 Player, Banker, Tie, Pair 중
+            원하는 곳에 베팅을 할 수 있습니다.
+          </p>
+          <p>2. 딜러는 Player측과 Banker측에 각각 2장의 카드를 내려놓습니다.</p>
+          <p>
+            3. 딜러는 Player, Banker순으로 카드를 오픈하고 바카라 룰에 의해
+            추가로 한 장의 카드를 더 받을 수 있습니다.
+          </p>
+          <p>
+            4. Player측 또는 Banker측 카드의 합이 9에 가까운 쪽이 이기게 되고,
+            이긴 쪽에 베팅한 고객은 최초 베팅액의 1배를 받습니다. (1 to 1) 일
+            경우에는 불가능함)
+          </p>
+
           <br />
           <br />
           <div
@@ -118,16 +116,12 @@
               <br />
               <b>합이 10이상일 경우는 일의 자리만 계산합니다.</b>
             </p>
-            <hr />
           </div>
+          <hr />
+          <div class="col-12 text-center">
+            <h3 class="col-12" id="toggle_Odds">Betting Odds</h3>
 
-          <div>
-            <h3 class="text-center" id="toggle_Odds">Betting Odds</h3>
-
-            <ul
-              class="text-center flex display-flex justify-content-center"
-              id="toggle_Odds_Show"
-            >
+            <div class="col-12" id="toggle_Odds_Show">
               <li class="list-group-item list-group-item-success">
                 이긴 측은 베팅액의 1배를 지급받습니다.<br />[단, Banker측이
                 이기면 5%의 수수료를 차감합니다.]
@@ -149,10 +143,10 @@
               <li class="list-group-item list-group-item-success">
                 Pair Bet이 당첨될 경우에는 베팅 금액의 11배를 지급받습니다.
               </li>
-              <li class="list-group-item disabled" aria-disabled="true">
+              <p class="list-group-item disabled" aria-disabled="true">
                 ※ Pair : 최초 두 장의 카드가 같은 숫자가 나오는 것
-              </li>
-            </ul>
+              </p>
+            </div>
           </div>
           <hr />
           <div>
@@ -191,11 +185,13 @@
                 <tr>
                   <th scope="row">Banker측 처음 2장의 카드 합</th>
                   <th scope="row">
-                    Player측 세 번째 카드가 <br />아래의 경우 추가카드를 받음
+                    Player측 세 번째 카드가 <br />아래의 경우 추가카드
+                    <h7>O</h7>
                   </th>
+
                   <th scope="row">
-                    Player측 세 번째 카드가<br />아래의 경우 추가카드를 받지
-                    않음
+                    Player측 세 번째 카드가<br />아래의 경우 추가카드
+                    <h7>X</h7>
                   </th>
                 </tr>
 
