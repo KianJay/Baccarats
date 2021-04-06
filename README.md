@@ -1,7 +1,7 @@
 # Bacarrat Game
 Mini Team Project
 Bacarrat Game Deployed by AWS S3
-Start the game and enjoy it!
+Start the game, enjoy it!
 
 ## Motivation
 We were given the task to build a static web application in 3 day as mini team project. </br>
