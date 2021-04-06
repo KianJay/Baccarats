@@ -8,7 +8,7 @@ We were given the task to build a static web application in 3 day as mini team p
 And, we came up with Bacarrat game that includes the basic game rules in detail  .</br>
 
 ## Stacks And Libraries
-built with HTML5, CSS and JQuery and AWS S3 to deploy the application
+built with HTML5, CSS, JavaScript/ JQuery and AWS S3 to deploy the application
 
 ## The Application Images
   <h3>Main Page</h3>
