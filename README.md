@@ -4,7 +4,7 @@ Bacarrat Game Deployed by AWS S3
 Start the game, enjoy it!
 
 ## Motivation
-We were given the task to build a static web application in 3 day as mini team project. </br>
+We were given a task to build a static web application in 3 day as mini team project. </br>
 And, we came up with Bacarrat game that includes the basic game rules in detail  .</br>
 
 ## Stacks And Libraries
